@@ -1,9 +1,10 @@
-// 아예 import 자체가 불가능함을 유의
-// import { useState } from "react"
+import MyServerComponent from "@/app/components/MyServerComponent"
 
 export default async function ServerComponentDemoPage() {
-    // 훅 사용 불가
-    // const [data, setData] = useState(null)
     console.log("from Server Component Demo Page")
-    return <div>Server Component Demo Page</div>
+    return <div>
+        <h1>Server Component Demo Page</h1>
+        {/* 서버 컴포넌트 렌더링 */}
+        <MyServerComponent />
+    </div>
 }
